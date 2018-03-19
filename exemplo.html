@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Eemplo 3 - Tabela</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="FuncaoValidacao.js"></script>
+
+	</head>
+
+	<body>
+
+		<h1>Formulário</h1>
+<!-- esse action é onde especifica para onde esse formulario vai exemplo: arquivo estando no mesmo diretorio que ele ex:action="/nomedoarquivo" -->
+
+		<form action="" method="POST" id="formulário" class="form">
+			<table border="0">
+
+				<tr>
+					<td>Nome:</td>
+					<!-- value é usado para edições ou quando usa o mesmo formulário para edição. Placeholder em quanto a pessoa não preenche esse valor ele não sai -->
+					<td><input required type="text" id="nome" name="nome" placeholder="Digite aqui seu nome" ></td>
+					
+				
+				</tr>
+
+				<tr>
+					<td>Email: </td>
+					<td> <input required type="email" id="email" name="email" placeholder="Digite aqui seu email..."></td>
+				</tr>
+
+				<tr>
+					<td>Sexo</td>
+					<td>
+						<input type="radio" required id="SexoF" name="Sexo" value="F"> Feminino 
+						<input type="radio" required id="SexoM" name="Sexo" value="M"> Masculino
+					</td>
+				</tr>
+				<!-- Ometodo radio seleciona uma opção por vez o checkbox seleciona varias opções ao mesmo tempo -->
+
+				<tr>
+					<td>Gosto Musical</td>
+					<td>
+						<input type="checkbox" id="checkrock" name="gostoMusical" value="rock" > Rock 
+						<input type="checkbox" name="gostoMusical" value="sertanejo" > Sertanejo
+						<input type="checkbox" name="gostoMusical" value="samba" > Samba
+
+					</td>
+				</tr>
+
+				<tr>
+					<td>Cidade: </td>
+					<td>
+
+						<select name="cidade" id="cidade">
+							
+							<option value="Três Corações">
+								Três Corações
+							</option>
+							<option value="Cambuquira">
+								Cambuquira
+							</option>
+							<option select value="Lavras">
+								Lavras
+							</option>
+
+
+						</select> 
+						
+					</td>
+				</tr>
+
+				<tr>
+					<td>Assuntu: </td>
+					<td>
+						<input class="formInput" required placeholder="Digite o assunto aqui" type="text" name="assunto" id="assunto">
+					</td>
+				</tr>
+
+				<tr>
+					<td>Mensagem: </td>
+					<td>
+						<textarea cols="50" rows="15" placeholder="Digite aqui sua mensagem...." type="text" name="mensagem" id="mensagem"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="enviar" value="Submeter">
+					</td>
+				</tr>
+
+			</table>
+		</form>
+	</body>
+
+	</html>
